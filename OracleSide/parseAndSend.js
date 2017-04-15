@@ -23,6 +23,12 @@
  *		to an oracle database table (specified in dbconfig.js) and inserts the 
  *		parsed information.
  *
+ * DEPENDENCIES (node_modules must be located in the same directory as this file)
+ *	oracledb - node.js/Oracle interaction (needs Python 2.7, C++11 compiler,
+		Oracle InstantClient 12)
+ *	async - Handles multiple processes running at once
+ *
+ *
  *****************************************************************************/
 
 function parseJson (inJson) {
